@@ -7,7 +7,7 @@ b1 = Box()
 s1 = Sphere()
 p1 = Pyramid()
 #letting the user choose a shape
-shapeChoice = int(input('To calculate a cube, press 1, to calculate a sphere, press 2, to calculate a pryramid, press 3 '))
+shapeChoice = int(input('To calculate a cube, press 1, to calculate a sphere, press 2, to calculate a pryramid, press 3. '))
 if shapeChoice == 1:
     b1.l = float(input('Length of cube: '))
     b1.w = float(input('Width of cube: '))
@@ -19,10 +19,10 @@ elif shapeChoice == 2:
     print("Volume of shape: ",  round(s1.calcVol()))
     print("Total surface area of shape: ",  round(s1.calcSA()))
 elif shapeChoice == 3:
-    p1.l = float(input('Length of the Pyramid Base '))
-    p1.w = float(input('Width of the Pyramid Base '))
-    p1.s = float(input('Pyramid side legth '))
+    p1.l = float(input('Length of the Pyramid Base: '))
+    p1.w = float(input('Width of the Pyramid Base: '))
+    p1.s = float(input('Pyramid side length: '))
     print("Volume of shape: ",  round(p1.calcVol()),2)
     print("Total surface area of shape: ",  round(p1.calcSA(),))
 else:
-    print('Please choose an included shape')
+    print('Please choose an included shape.')
